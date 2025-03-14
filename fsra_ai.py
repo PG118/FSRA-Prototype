@@ -7,7 +7,7 @@ import streamlit as st
 import os
 
 # Load OpenAI API key (Replace with your actual key)
-openai.api_key = "your-secret-key-here"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Load preprocessed regulations with embeddings
 with open("regulations_with_embeddings.json", "r", encoding="utf-8") as f:
